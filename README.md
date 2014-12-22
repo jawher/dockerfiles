@@ -1,1 +1,1 @@
-Various dockerfiles for automated build on dockerhub
+A python 2.6 Dockerfile for automated build on dockerhub
