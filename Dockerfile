@@ -35,6 +35,6 @@ RUN set -x \
 	&& rm -rf /usr/src/python
 
 # install "virtualenv", since the vast majority of users of this image will want it
-RUN pip install virtualenv coverage pytest nose mock
+RUN pip install virtualenv
 
 CMD ["python"]
