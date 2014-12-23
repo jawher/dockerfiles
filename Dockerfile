@@ -23,6 +23,7 @@ RUN set -x \
 		| tar -xJC /usr/src/python --strip-components=1 \
 	&& cd /usr/src/python \
 	&& sed -i 's/#zlib/zlib/' Modules/Setup.dist \
+	&& sed -i 's/#_sha/_sha/' Modules/Setup.dist \
 	&& ./configure --enable-shared \
 	&& make -j$(nproc) \
 	&& make install \
