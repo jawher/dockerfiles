@@ -22,6 +22,7 @@ RUN set -x \
 	&& curl -SL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz" \
 		| tar -xJC /usr/src/python --strip-components=1 \
 	&& cd /usr/src/python \
+	&& sed -i 's/#zlib/zlib/' Modules/Setup.dist \
 	&& ./configure --enable-shared \
 	&& make -j$(nproc) \
 	&& make install \
