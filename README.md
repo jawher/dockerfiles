@@ -1,1 +1,1 @@
-A python 2.6 Dockerfile for automated build on dockerhub
+A collection of Dockerfiles for automated builds on Dockerhub.
